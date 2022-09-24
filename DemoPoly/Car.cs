@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace DemoPoly
 {
+    // Car ärver av Vehicle
     public class Car : Vehicle
     {
         public int NumberOfDoors { get; set; }
-
+        
         //Förändring av ett beteende definierat i en förälderklass
         public override void MakeSound()
         {

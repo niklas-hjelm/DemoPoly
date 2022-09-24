@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace DemoPoly
 {
+    // MotorCycle ärver av Vehicle
     public class MotorCycle : Vehicle
     {
+        // Property unik för MotorCycle
         public string HandlebarStyle { get; set; }
 
         //Förändring av ett beteende definierat i en förälderklass
