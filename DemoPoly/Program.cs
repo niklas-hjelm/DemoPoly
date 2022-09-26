@@ -1,6 +1,8 @@
 ﻿// Polymorfi - Polymorphism
 
 using DemoPoly;
+using DemoPoly.Animals;
+using DemoPoly.Vehicles;
 
 //Instansiera Car och lägg i en variabel med namnet car
 var car = new Car();
@@ -41,4 +43,23 @@ foreach (var v in vehicles)
     {
         Console.WriteLine("This is a motorcycle!");
     }
+}
+
+var zoe = new Dog();
+var wanda = new Fish();
+
+var animals = new List<Animal>();
+
+animals.Add(zoe);
+animals.Add(wanda);
+
+
+var noiseMakers = new List<IMakeNoise>();
+
+noiseMakers.AddRange(vehicles);
+noiseMakers.AddRange(animals);
+
+foreach (var noiseMaker in noiseMakers)
+{
+    noiseMaker.MakeSound();
 }

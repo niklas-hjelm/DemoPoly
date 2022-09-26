@@ -1,13 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DemoPoly
+﻿namespace DemoPoly.Vehicles
 {
     // En abstrakt klass går INTE att instansiera (alltså skapa objekt utav)
-    public abstract class Vehicle
+    public abstract class Vehicle : IMakeNoise
     {
         public int TopSpeed { get; set; }
 
