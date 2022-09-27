@@ -1,5 +1,6 @@
 ﻿namespace DemoPoly.Animals;
 
+//Animal implementerar interfacet IMakeNoise
 public abstract class Animal : IMakeNoise
 {
     public virtual void Consume(string food)

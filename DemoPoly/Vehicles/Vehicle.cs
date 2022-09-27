@@ -1,7 +1,8 @@
 ﻿namespace DemoPoly.Vehicles
 {
     // En abstrakt klass går INTE att instansiera (alltså skapa objekt utav)
-    public abstract class Vehicle : IMakeNoise
+    //Vehicle implementerar interfacet IMakeNoise
+    public class Vehicle : IMakeNoise
     {
         public int TopSpeed { get; set; }
 
@@ -18,6 +19,6 @@
         }
 
         //Tvingar alla barnklasser(subtyper) att implementera beteendet
-        public abstract void PrintInfo();
+        public virtual void PrintInfo(){}
     }
 }
